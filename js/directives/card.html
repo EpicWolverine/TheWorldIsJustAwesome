@@ -1,0 +1,6 @@
+<div ng-show="id === undefined"><img src="./upvote.png" style="width: 18px; vertical-align: middle;"><span class="info" style="vertical-align: middle;"> {{pic.data.score}}</span>
+<span class="title" style="vertical-align: middle;">{{pic.data.title}}</span></div>
+<div class="info" ng-show="id === undefined">By {{pic.data.author}} on {{pic.data.created_utc * 1000 | date:'medium':'UTC'}}</div>
+<div class="info" ng-show="id === undefined">Source: <a href="{{pic.data.url}}" target="_blank">{{pic.data.url}}</a></div>
+<div><a href="#/photos/{{id}}"><img ng-src="{{pic.data.url}}"></a></div>
+<!--<div>{{pic.data.url.indexOf(".jpg") > -1}}</div>-->

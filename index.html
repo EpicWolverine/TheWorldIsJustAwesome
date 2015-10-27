@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="./favicon.ico" />
+        <meta charset="utf-8">
+        
+        <link href="./css/stylesheet.css" rel="stylesheet" />
+        
+        <!-- Core AngularJS library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+        <!-- <script src="./js/libraries/angular.min.js"></script> -->
+        <!-- AngularJS routing library -->
+        <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+        <!-- <script src="./js/libraries/angular-route.min.js"></script> -->
+        <!-- Modules -->
+        <script src="./js/app.js"></script>
+        <!-- Controllers -->
+        <script src="./js/controllers/HomeController.js"></script>
+        <script src="./js/controllers/PhotoController.js"></script>  
+        <!-- Directives -->
+        <script src="./js/directives/card.js"></script>
+        <!-- Services -->
+        <script src="./js/services/redditEarthPics.js"></script>
+        
+        <title>The World is Just Awesome</title>
+    </head>
+    <body ng-app="earthPics">
+        <h1>The World is Just Awesome</h1>
+        <!-- <div class="main" ng-controller="HomeController">
+            <div class="card" ng-repeat="pic in pics" ng-hide="pic.data.domain === 'self.EarthPorn'">
+                <pic-ard pic="pic" id="$index"></pic-ard>
+            </div>
+        </div> -->
+        <div ng-view></div>
+    </body>
+</html>
